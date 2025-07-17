@@ -8,7 +8,8 @@ from utils import load_model, preprocess_image, load_labels, apply_gradcam
 st.set_page_config(page_title="RadiologyAI", layout="centered")
 st.title("🧠 RadiologyAI – Chest X-ray Diagnosis")
 
-model = load_model("model.pt")
+model = load_model("models/model.pt")
+
 labels_dict = load_labels("labels.json")
 
 language = st.selectbox("Choose Language", ["en", "fr", "zu"])
